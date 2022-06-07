@@ -9,9 +9,16 @@ const getData = api => {
       let products = response;
       let output = products.map(product => {
         // template
+        return `<article class="Card">
+        <img src="${product.images[0] ? product.images[0] :  product.category.image}"/>
+        <h2>
+        ${product.title}
+        <small>$ ${product.price}</small>
+        </h2>
+      </article>`;
       });
       let newItem = document.createElement('section');
-      newItem.classList.add('Item');
+      newItem.classList.add('Items');
       newItem.innerHTML = output;
       $app.appendChild(newItem);
     })
@@ -24,6 +31,7 @@ const loadData = () => {
 
 const intersectionObserver = new IntersectionObserver(entries => {
   // logic...
+  loadData();
 }, {
   rootMargin: '0px 0px 100% 0px',
 });
