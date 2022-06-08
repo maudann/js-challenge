@@ -8,7 +8,7 @@ Correo Electronico: dannieldominguez@gmail.com
 
 ## Reto:
 
-- [ ] Primer problema
+- [x] Primer problema
 - [x] Segundo problema
 - [ ] Tercer problema
 - [ ] Cuarto Problema
