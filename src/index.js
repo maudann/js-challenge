@@ -57,7 +57,7 @@ const intersectionObserver = new IntersectionObserver(entries => {
   // logic...
   if (entries[0].isIntersecting) loadData();
   
-  //Valida igualmente el $observe
+  //Valida igualmente Dejar de observar el elemento "observe".
   //if (entry.intersectionRatio > 0) loadData();
 }, {
   rootMargin: '0px 0px 100% 0px',
